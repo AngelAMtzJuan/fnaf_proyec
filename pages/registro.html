@@ -1,124 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro en Freddy Fazbear's Pizza</title>
-    <!-- Página de registro temática de FNAF -->
+    <link rel="shortcut icon" href="../img/five.png" type="image/x-icon">
 </head>
-<body>
-    <!-- Menú de navegación -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="animatronics.html">Conoce a los Animatrónicos</a></li>
-                <li><a href="mapa.html">Mapa de Seguridad</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
-                <li><a href="#">🕹️ Juega Ahora</a></li>
-            </ul>
-        </nav>
-    </header>
+<body bgcolor="white">
+    <h1 align="center">Freddy Fazbear's Pizza</h1>
+    
+    <hr>
+    <p align="center">
+        <a href="../index.html">Inicio</a> |
+        <a href="https://freddy-fazbears-pizza.fandom.com/es/wiki/Animatr%C3%B3nicos">Animatrónicos</a> |
+        <a href="./user.html">Iniciar Sesión</a> |
+       
+    </p>
+    <hr>
 
-    <!-- Formulario de Registro -->
-    <main>
-        <h2>Registro de Vigilante Nocturno</h2>
-        <p>¡Únete a la noche en Freddy Fazbear's Pizza! Completa el registro para monitorear la seguridad de la pizzería y vigilar a los animatrónicos.</p>
-        
-        <form>
-            <div>
-                <label for="nombreCompleto">Nombre Completo</label>
-                <br>
-                <input type="text" id="nombreCompleto" placeholder="Ejemplo: Mike Schmidt">
-            </div>
-            <br>
+    <h2 align="center">Registro de Vigilante Nocturno</h2>
+    <p align="center">¡Únete a la noche en Freddy Fazbear's Pizza!</p>
+    
+    <form align="center">
+        <table align="center" width="50%">
+            <tr>
+                <td><label>Nombre Completo:</label></td>
+                <td><input type="text" placeholder="Ejemplo: Mike Schmidt"></td>
+            </tr>
+            <tr>
+                <td><label>Nombre de Usuario:</label></td>
+                <td><input type="text" placeholder="Nombre de usuario en Freddy's"></td>
+            </tr>
+            <tr>
+                <td><label>País:</label></td>
+                <td>
+                    <select>
+                        <option value="mx">México</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="ca">Canadá</option>
+                        <option value="uk">Reino Unido</option>
+                        <option value="jp">Japón</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Género:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male">Masculino
+                    <input type="radio" name="gender" value="female">Femenino
+                    <input type="radio" name="gender" value="other">Otro
+                </td>
+            </tr>
+            <tr>
+                <td><label>Correo Electrónico:</label></td>
+                <td><input type="text" placeholder="user@fazbear.com"></td>
+            </tr>
+            <tr>
+                <td><label>Contraseña:</label></td>
+                <td><input type="password" placeholder="Contraseña segura"></td>
+            </tr>
+            <tr>
+                <td><label>Confirmar Contraseña:</label></td>
+                <td><input type="password" placeholder="Confirmar contraseña"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox">Aceptar términos y condiciones
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox">Recibir noticias de la pizzería
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Registrarse">
+                </td>
+            </tr>
+        </table>
+    </form>   
 
-            <div>
-                <label for="username">Nombre de Usuario</label>
-                <br>
-                <input type="text" id="username" placeholder="Nombre de usuario en Freddy's">
-            </div>
-            <br>
+    <p align="center">¿Ya eres parte del equipo? <a href="login.html">Inicia sesión aquí</a></p>
 
-            <div>
-                <label for="cname">País</label>
-                <br>
-                <select name="cname" id="cname">
-                    <option value="mx">México</option>
-                    <option value="us">Estados Unidos</option>
-                    <option value="ca">Canadá</option>
-                    <option value="uk">Reino Unido</option>
-                    <option value="jp">Japón</option>
-                </select>
-            </div>
-            <br>
-
-            <div>
-                <p>Género</p>
-                <input type="radio" name="gender" id="male" value="male">
-                <label for="male">Masculino</label>
-                <br>
-                <input type="radio" name="gender" id="female" value="female">
-                <label for="female">Femenino</label>
-                <br>
-                <input type="radio" name="gender" id="other" value="other">
-                <label for="other">Otro</label>
-            </div>
-            <br>
-
-            <div>
-                <label for="inputEmail">Correo Electrónico</label>
-                <br>
-                <input type="email" name="inputEmail" id="inputEmail" placeholder="user@fazbear.com">
-            </div>
-            <br>
-
-            <div>
-                <label for="password">Contraseña</label>
-                <br>
-                <input type="password" id="password" placeholder="Contraseña segura">
-            </div>
-            <br>
-
-            <div>
-                <label for="confirm-password">Confirmar Contraseña</label>
-                <br>
-                <input type="password" id="confirm-password" placeholder="Confirmar contraseña">
-            </div>
-            <br>
-
-            <div>
-                <input type="checkbox" name="legalPolicy" id="legalPolicy" value="true">
-                <label for="legalPolicy">Aceptar términos y condiciones</label>
-            </div>
-            <br>
-
-            <div>
-                <input type="checkbox" name="recibirCorreos" id="recibirCorreos" value="true">
-                <label for="recibirCorreos">Recibir noticias de la pizzería</label>
-            </div>
-            <br>
-
-            <div>
-                <button type="submit">Registrarse</button>
-            </div>
-        </form>   
-    </main>
-
-    <p>¿Ya eres parte del equipo? <a href="login.html">Inicia sesión aquí</a></p>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2024 Freddy Fazbear's Pizza. Todos los derechos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <hr>
+    <p align="center">&copy; 2024 Freddy Fazbear's Pizza</p>
+    <p align="center">
+        <a href="https://www.facebook.com">Facebook</a> |
+        <a href="https://www.twitter.com">Twitter</a> |
+        <a href="https://www.instagram.com">Instagram</a> |
+        <a href="https://www.youtube.com">YouTube</a>
+    </p>
 </body>
 </html>
